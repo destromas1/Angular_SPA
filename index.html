@@ -1,0 +1,36 @@
+<html ng-app="mySpa">
+<head>
+	<title>AngularJS</title>
+	<script src="lib/angular.min.js" type="text/javascript"></script>
+	<script src="lib/angular-route.min.js" type="text/javascript"></script>
+	<script src="lib/angular-animate.min.js" type="text/javascript"></script>
+	<script src="app.js" type="text/javascript"></script>
+    <script src="profileCtrl.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="styles/animation.css" />
+</head>
+<body>
+	<div>
+        <a href="/">
+            <h1>My SPA Site</h1>
+        </a>
+        <br />
+        <table>
+            <tr>
+                <td>
+                    <a href="/">Home</a>
+                </td>
+                <td>
+                    <a href="#/profile">Profile</a>
+                </td>
+                <td>
+                    <a href="#/contact">Contact</a>
+                </td>
+            </tr>
+        </table>
+        <br />
+		<div class="view-container">
+			<div ng-view class="view-animation"></div>
+		</div>
+    </div>
+</body>
+</html>

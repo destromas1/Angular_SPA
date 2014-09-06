@@ -1,0 +1,12 @@
+<div>
+    <h2>This is Profile Page</h2>
+    <div>
+		Search a Profile -  <input type="text" ng-model="searchByName" />
+    </div>
+    <div>
+		<div ng-repeat="profile in profiles | filter:searchByName">
+			<span><b>{{profile.Name}}</b></span>
+			<span><b>{{profile.Id}}</b></span>
+		</div>
+    </div>
+</div>
